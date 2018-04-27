@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--在<include>标签当中,我们也可以覆盖layout中定义的所有属性-->
+    <include
+        layout="@layout/include_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        style="@style/textStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HAHA" />
+</LinearLayout>
+
