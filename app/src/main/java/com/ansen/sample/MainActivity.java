@@ -14,14 +14,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_traditional);
 //        setContentView(R.layout.activity_constraintlayout);
-        getWindow().addOnFrameMetricsAvailableListener(new Window.OnFrameMetricsAvailableListener() {
-            @Override
-            public void onFrameMetricsAvailable(Window window, FrameMetrics frameMetrics, int dropCountSinceLastInvocation) {
-//                // Layout measure duration in nanoseconds
-                long layoutMeasureDurationNs = frameMetrics.getMetric(FrameMetrics.LAYOUT_MEASURE_DURATION);
-                Log.d("ansen", "layoutMeasureDurationNs: " + layoutMeasureDurationNs);
-            }
-        }, new Handler());
+
+//        getWindow().addOnFrameMetricsAvailableListener(new Window.OnFrameMetricsAvailableListener() {
+//            @Override
+//            public void onFrameMetricsAvailable(Window window, FrameMetrics frameMetrics, int dropCountSinceLastInvocation) {
+////                // Layout measure duration in nanoseconds
+//                long layoutMeasureDurationNs = frameMetrics.getMetric(FrameMetrics.LAYOUT_MEASURE_DURATION);
+//                Log.d("ansen", "layoutMeasureDurationNs: " + layoutMeasureDurationNs);
+//            }
+//        }, new Handler());
 
     }
 
