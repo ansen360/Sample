@@ -6,14 +6,18 @@
 
     <!--在<include>标签当中,我们也可以覆盖layout中定义的所有属性-->
     <include
-        layout="@layout/include_layout"
+        layout="@layout/include_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <TextView
-        style="@style/textStyle"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="HAHA" />
+        android:layout_height="470dp"
+        android:background="#8ad4fa"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="内容" />
+
+    <include layout="@layout/include_copyright"></include>
 </LinearLayout>
 
