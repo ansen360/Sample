@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--merge标签使用的是父布局的特性
+    (也就是这里是垂直的LinearLayout,merge中两个button也就是垂直的LinearLayout属性)-->
+    <include layout="@layout/merge_layout" />
+
+</LinearLayout>
